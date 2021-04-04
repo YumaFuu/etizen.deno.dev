@@ -1,6 +1,6 @@
 addEventListener("fetch", (event) => {
   event.respondWith(
-    new Response("あああああああ", {
+    new Response("hello", {
       status: 200,
       headers: {
         server: "denosr",
