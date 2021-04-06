@@ -1,1 +1,1 @@
-# yuma.deno.dev
+# etizen.deno.dev
