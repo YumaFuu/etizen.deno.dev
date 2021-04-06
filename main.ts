@@ -46,7 +46,7 @@ addEventListener("fetch", (event) => {
   const spot = spots[Math.floor(Math.random() * spots.length)]
 
   event.respondWith(
-    new Response(,
+    new Response(
       JSON.stringify({
         name: spot[0],
         url: spot[1],
