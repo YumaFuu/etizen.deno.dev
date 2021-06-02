@@ -1,6 +1,6 @@
-import { Spots } from "../lib/spot";
+import { Spots } from "../lib/spot.ts";
 
-export async function Handler() {
+export async function IndexHandler() {
   const res: string =  JSON.stringify({
     spots: Spots,
   })

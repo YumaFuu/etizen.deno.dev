@@ -1,9 +1,9 @@
 import { serve } from "https://deno.land/x/sift/mod.ts";
-import * as index from "./handler/index";
-import * as random from "./handler/random";
+import { IndexHandler } from "./handler/index.ts";
+import { RandomHandler } from "./handler/random.ts";
 
 serve({
-	"/": index.Handler,
-	"/random": random.Handler,
+	"/": IndexHandler,
+	"/random": RandomHandler,
 	404: () => new Response("oh boy")
 });

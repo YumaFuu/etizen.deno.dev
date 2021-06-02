@@ -1,6 +1,6 @@
-import { Spots } from "../lib/spot";
+import { Spots } from "../lib/spot.ts";
 
-export async function Handler() {
+export async function RandomHandler() {
   const i = Math.floor(Math.random() * Spots.length);
 
   const res: string =  JSON.stringify({
@@ -9,3 +9,4 @@ export async function Handler() {
 
   return new Response(res)
 }
+
