@@ -1,0 +1,37 @@
+name: 要望
+description: 越前に関する要望をissueにしてください
+
+body:
+  - type: input
+    attributes:
+      label: タイトル
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Description
+      description: >-
+        要望の説明をできるだけ詳しく書いてください
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: 工数
+      description: What version of our software are you running?
+      options:
+        - 1
+        - 2
+        - 3
+        - 5
+        - 8
+      render: sh-session
+
+  - type: checkboxes
+    attributes:
+      label: Conduct
+      options:
+        - label: >-
+            I agree to follow the etizen
+          required: true
